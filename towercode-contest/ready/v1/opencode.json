@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "AGENTS.md",
+    "docs/contest-rules.md",
+    "docs/skills/environment.md",
+    "docs/skills/order-no.md",
+    "docs/skills/transaction.md",
+    "docs/skills/state-machine.md",
+    "docs/skills/veto.md",
+    "docs/skills/vue-click.md",
+    "docs/skills/submission.md"
+  ],
+  "permission": {
+    "webfetch": "deny"
+  }
+}

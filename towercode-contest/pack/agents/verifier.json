@@ -1,0 +1,15 @@
+{
+  "description": "编译、启动并调用接口。把真实结果写入自测报告；没跑成的写成未测，不编造成功。",
+  "mode": "subagent",
+  "temperature": 0.1,
+  "color": "#5925dc",
+  "permission": {
+    "edit": "allow",
+    "bash": "allow",
+    "webfetch": "deny"
+  },
+  "tools": {
+    "webfetch": false,
+    "websearch": false
+  }
+}

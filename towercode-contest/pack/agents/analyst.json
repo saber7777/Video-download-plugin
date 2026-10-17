@@ -1,0 +1,15 @@
+{
+  "description": "只做需求分析。阅读题目，写出角色、状态机、单号、接口和页面，不改业务代码。",
+  "mode": "subagent",
+  "temperature": 0.1,
+  "color": "#175cd3",
+  "permission": {
+    "edit": "allow",
+    "bash": "deny",
+    "webfetch": "deny"
+  },
+  "tools": {
+    "webfetch": false,
+    "websearch": false
+  }
+}

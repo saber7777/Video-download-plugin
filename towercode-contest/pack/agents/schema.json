@@ -1,0 +1,15 @@
+{
+  "description": "只编写 db/schema.sql 和 db/data.sql。负责表关系、唯一单号、状态、版本号和取号序列，不写 Java 或 Vue。",
+  "mode": "subagent",
+  "temperature": 0.1,
+  "color": "#b54708",
+  "permission": {
+    "edit": "allow",
+    "bash": "deny",
+    "webfetch": "deny"
+  },
+  "tools": {
+    "webfetch": false,
+    "websearch": false
+  }
+}

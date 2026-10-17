@@ -1,0 +1,15 @@
+{
+  "description": "实现 Vue3 页面。按钮使用题面中的可见中文，登录态走后端令牌，不写假数据成功，不改业务规则。",
+  "mode": "subagent",
+  "temperature": 0.2,
+  "color": "#067647",
+  "permission": {
+    "edit": "allow",
+    "bash": "allow",
+    "webfetch": "deny"
+  },
+  "tools": {
+    "webfetch": false,
+    "websearch": false
+  }
+}

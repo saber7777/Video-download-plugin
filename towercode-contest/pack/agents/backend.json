@@ -1,0 +1,15 @@
+{
+  "description": "实现 Spring Boot 单体后端：登录、事务并发、LAST_INSERT_ID 单号、状态机。不写页面，不放开鉴权，不拼接 SQL。",
+  "mode": "subagent",
+  "temperature": 0.2,
+  "color": "#175cd3",
+  "permission": {
+    "edit": "allow",
+    "bash": "allow",
+    "webfetch": "deny"
+  },
+  "tools": {
+    "webfetch": false,
+    "websearch": false
+  }
+}

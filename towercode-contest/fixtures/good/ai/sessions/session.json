@@ -1,0 +1,5 @@
+{
+  "session": "sample",
+  "note": "正式比赛替换为 towercode export 或 opencode export 的原文。这里只证明闸门认得非空会话文件。",
+  "classes": ["OrderNoService", "OrderService", "OrderStateMachine"]
+}

@@ -1,0 +1,25 @@
+{
+  "description": "交卷前的只读审查。查找登录绕过、SQL 拼接、单号和状态机缺失，给出文件证据，不修改文件。",
+  "mode": "subagent",
+  "temperature": 0.1,
+  "color": "#b42318",
+  "permission": {
+    "edit": "deny",
+    "bash": {
+      "*": "deny",
+      "rg *": "allow",
+      "find *": "allow",
+      "ls *": "allow",
+      "git diff*": "allow",
+      "git status*": "allow",
+      "git log*": "allow"
+    },
+    "webfetch": "deny"
+  },
+  "tools": {
+    "write": false,
+    "edit": false,
+    "webfetch": false,
+    "websearch": false
+  }
+}

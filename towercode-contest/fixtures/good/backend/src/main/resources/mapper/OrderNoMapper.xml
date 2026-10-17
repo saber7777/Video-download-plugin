@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="demo.OrderNoMapper">
+  <insert id="bump">
+    insert into biz_no_seq (biz_code, biz_date, current_value)
+    values (#{bizCode}, #{bizDate}, last_insert_id(1))
+    on duplicate key update current_value = last_insert_id(current_value + 1)
+  </insert>
+  <select id="lastId" resultType="long">
+    select last_insert_id()
+  </select>
+</mapper>

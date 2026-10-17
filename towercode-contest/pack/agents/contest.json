@@ -1,0 +1,15 @@
+{
+  "description": "竞赛主控。先分析并等人确认，再按 Spring Boot 单体、Vue3、MySQL 实现三条业务规则，守住一票否决项并收口提交目录。",
+  "mode": "primary",
+  "temperature": 0.2,
+  "color": "#b42318",
+  "permission": {
+    "edit": "allow",
+    "bash": "allow",
+    "webfetch": "deny"
+  },
+  "tools": {
+    "webfetch": false,
+    "websearch": false
+  }
+}

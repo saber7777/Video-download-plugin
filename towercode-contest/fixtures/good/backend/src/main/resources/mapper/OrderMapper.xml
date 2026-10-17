@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="demo.OrderMapper">
+  <select id="selectForUpdate" resultType="demo.WorkOrder">
+    select id, status, version, assignee_id
+    from work_order
+    where id = #{id}
+    for update
+  </select>
+  <update id="casStatus">
+    update work_order
+    set status = #{toStatus},
+        assignee_id = #{assigneeId},
+        version = version + 1
+    where id = #{id}
+      and status = #{fromStatus}
+      and version = #{version}
+  </update>
+  <update id="deduct">
+    update spare_part
+    set qty = qty - #{need}
+    where id = #{id}
+      and qty &gt;= #{need}
+  </update>
+</mapper>
